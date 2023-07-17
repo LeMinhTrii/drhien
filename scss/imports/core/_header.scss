@@ -1,0 +1,77 @@
+// css header
+.header {
+    &_content {
+        padding-left: clamp(15px, calc(((100vw - var(--container-width)) / 2)), 9999px);
+        position: relative;
+        height: 80px;
+        &-logo {
+            position: absolute;
+            top: 15px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &-nav {
+            width: max-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+            ul {
+                display: flex;
+                align-items: center;
+                li {
+                    a {
+                        color: #333333;
+                        padding: 15px;
+                        font-family: mm;
+                        font-size: 14px;
+                        img {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        &-btncall {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffca0e;
+            height: 100%;
+            padding: 31px 28px;
+            box-sizing: border-box;
+            color: $white-cl;
+            span {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-family: mm;
+                padding: 7px 0;
+                font-size: 14px;
+                position: relative;
+                display: inline-block;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background: $white-cl;
+                    height: 1px;
+                    width: 15px;
+                    top: 0;
+                    left: 0;
+                }
+                &::before {
+                    position: absolute;
+                    content: "";
+                    background: $white-cl;
+                    height: 1px;
+                    width: 25px;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

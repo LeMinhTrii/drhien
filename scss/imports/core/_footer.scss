@@ -1,0 +1,75 @@
+// css footer
+.footer {
+    position: relative;
+    &_content {
+        padding: 50px 0;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 100px 1fr;
+        gap: 30px;
+        &-wrap {
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    li {
+                        a {
+                            color: #0080be;
+                            font-family: mm;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                }
+                .social {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+                padding-bottom: 16px;
+                border-bottom: 2px solid #0080be;
+            }
+            .bottom {
+                padding-top: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .coopyright,
+                .online {
+                    color: #000;
+                    font-family: mm;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+    &_pst {
+        img {
+            position: absolute;
+            &:nth-child(1) {
+                left: 0;
+                top: -7px;
+                z-index: -1;
+            }
+            &:nth-child(2) {
+                left: 150px;
+                bottom: -30px;
+                z-index: -1;
+            }
+            &:nth-child(3) {
+                right: 0;
+                bottom: -30px;
+                z-index: -1;
+            }
+        }
+    }
+}
