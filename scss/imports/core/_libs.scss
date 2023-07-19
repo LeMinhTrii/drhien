@@ -123,10 +123,13 @@
 }
 
 .change-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 530px;
     height: 100vh;
     transform: translate(-60%, -30%);
+    opacity: 0;
+    visibility: hidden;
+    @media (max-width: 991px) {
+        opacity: 1;
+        visibility: visible;
+    }
 }
