@@ -123,6 +123,9 @@
 }
 
 .change-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 530px;
     height: 100vh;
     transform: translate(-60%, -30%);
