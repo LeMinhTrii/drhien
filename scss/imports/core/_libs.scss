@@ -103,7 +103,12 @@
 }
 
 .change {
-    display: block;
+    opacity: 0;
+    visibility: hidden;
+    @media (max-width: 991px) {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .change .bar {
