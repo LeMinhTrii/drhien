@@ -82,10 +82,10 @@
             &-wrap {
                 .top {
                     ul {
-                        gap: 0px;
+                        gap: initial;
                         li {
                             margin-right: 20px;
-                            margin-top: -10px;
+                            margin-bottom: 10px;
                             a {
                                 color: #0080be;
                                 font-family: mm;
