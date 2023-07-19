@@ -11,10 +11,12 @@
             .top {
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 ul {
                     display: flex;
                     align-items: center;
+                    flex-wrap: wrap;
                     gap: 30px;
                     li {
                         a {
@@ -38,6 +40,7 @@
             .bottom {
                 padding-top: 16px;
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 justify-content: space-between;
                 .coopyright,
@@ -74,10 +77,41 @@
     }
     @media (max-width: $sm-max) {
         // Tablet
-        display: none;
+        overflow: hidden;
+        &_content {
+            &-wrap {
+                .top {
+                    ul {
+                        gap: 0px;
+                        li {
+                            margin-right: 20px;
+                            margin-top: -10px;
+                            a {
+                                color: #0080be;
+                                font-family: mm;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &_pst {
+            img {
+                position: absolute;
+                &:nth-child(1) {
+                    left: 0;
+                    top: 19px;
+                    z-index: -1;
+                    object-fit: cover;
+                }
+            }
+        }
     }
     @media (max-width: $xs-max) {
         // Mobile
-        --container-width: 767px;
     }
 }

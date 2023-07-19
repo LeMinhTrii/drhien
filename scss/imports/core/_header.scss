@@ -74,12 +74,32 @@
             }
         }
     }
+    @media (max-width: 1500px) {
+        &_content {
+            &-nav {
+                transform: translate(-50%, -50%);
+                ul {
+                    li {
+                        &:nth-child(8),
+                        &:nth-child(9) {
+                            display: none;
+                        }
+                        a {
+                            padding: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media (max-width: $sm-max) {
         // Tablet
         &_content {
             &-logo {
                 position: absolute;
                 top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
                 img {
                     width: 80px;
                     height: 80px;
