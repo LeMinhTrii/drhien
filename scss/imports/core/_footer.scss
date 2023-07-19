@@ -72,4 +72,12 @@
             }
         }
     }
+    @media (max-width: $sm-max) {
+        // Tablet
+        display: none;
+    }
+    @media (max-width: $xs-max) {
+        // Mobile
+        --container-width: 767px;
+    }
 }

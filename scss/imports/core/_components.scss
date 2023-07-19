@@ -12,6 +12,7 @@ img {
         display: block;
     }
 }
+
 a {
     text-decoration: none;
 }
@@ -20,101 +21,40 @@ a {
 .--white-cl {
     color: $white-cl;
 }
+
 .--black-cl {
     color: $black-cl;
 }
+
 .--blue-cl {
     color: $blue-cl;
 }
 
-// css article (nội dung chi tiết bài viết)
-article {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        // font-family: ib; // font bold
-        display: block;
-    }
-    h1 {
-        font-size: var(--h1-fs);
-        line-height: var(--h1-lh);
-        margin: 0 0 0.67rem 0;
-    }
-    h2 {
-        font-size: var(--h2-fs);
-        line-height: var(--h2-lh);
-        margin: 0 0 0.75rem 0;
-    }
-    h3 {
-        font-size: var(--h3-fs);
-        line-height: var(--h3-lh);
-        margin: 0 0 0.83rem 0;
-    }
-    h4 {
-        font-size: var(--h4-fs);
-        line-height: var(--h4-lh);
-        margin: 0 0 1.12rem 0;
-    }
-    h5 {
-        font-size: var(--h5-fs);
-        line-height: var(--h5-lh);
-        margin: 0 0 1.5rem 0;
-    }
-    h6 {
-        font-size: 0.67rem;
-        margin: 0 0 1.67rem 0;
-    }
-
-    p {
-        margin: 0 0 1.12rem 0;
-    }
-    strong {
-        // font-family: ib; // font bold
-    }
-    ol,
-    ul {
-        list-style: initial;
-        padding-left: 18px;
-    }
-    img {
-        display: inline-block;
-        height: auto;
-        overflow: hidden;
-        border-radius: 10px;
-        margin: 25px auto;
-    }
-    .video {
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%;
+.--heading-cpn {
+    padding-top: 46px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .text {
         position: relative;
-        margin: 25px auto;
-        iframe,
-        video {
+        padding-bottom: 21px;
+        font-family: ms;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background: linear-gradient(180deg, #5dc9f0 0%, #0080be 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &::before {
             position: absolute;
-            @include size(100%);
-            top: 0;
-            left: 0;
+            content: "";
+            bottom: 0;
+            width: 50%;
+            height: 3px;
+            background: #5cd4ff;
+            filter: blur(1px);
         }
-    }
-    @include xs {
-        img {
-            margin: 20px auto;
-        }
-    }
-}
-
-.heading {
-    font-family: ib;
-    &.--h1 {
-        font-size: var(--h1-fs);
-        line-height: var(--h1-lh);
-    }
-    &.--h2 {
-        font-size: var(--h2-fs);
-        line-height: var(--h2-lh);
     }
 }
